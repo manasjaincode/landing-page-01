@@ -1,0 +1,190 @@
+	*{
+    	    margin:0 ;
+	    padding:0 ;
+    box-sizing: border-box;
+	
+    	}
+    	html,body {
+    	    width: 100% ;
+    	    height:100%;
+	}
+    #main {
+        width: 100%;
+       
+        min-height: 100vh;
+    }
+#top {
+    width: 100%;
+        min-height: 60vh;
+       background-image: url(https://images.unsplash.com/photo-1520052205864-92d242b3a76b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D);
+       background-size:cover;
+       background-position: 50% 60% ;
+       
+       
+}
+#icons {
+    display: flex;
+}   
+#overlay { 
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(86, 84, 84, 0.332);
+    position: relative;
+
+}
+ #text { width: 100%; height: 20%;
+    background-color: rgba(196, 202, 187, 0);
+    justify-content:space-between;
+    position: absolute;
+ align-items: center;
+    bottom:20%;
+    padding:0 10vw ; 
+    color: aliceblue;
+    display: flex
+    
+   
+   
+    
+    /* padding= spaces create karta hai element ke content ke around
+    vw= screen size by width vary karige to text move karega 
+    vh= screen size by height vary karoge toh text move karega */  
+ ;}
+ #textright  {
+    display: flex;
+    align-items: center;
+ }
+ #textright p {
+    justify-content: end ;
+   font-size: 10px;
+   width: 60%; 
+
+ }
+
+ #text h1 {
+    font-size: 6vw;
+    color: white;
+    font-weight: 500;
+   
+ }
+
+
+
+
+
+ 
+    #bottom {
+        display: flex;
+         /* flex box property by default row arrangement hota hai */
+    
+        width: 100%;
+        min-height: 40vh;
+        background-color: black ;
+    }
+    #bone {
+        width: 25%;
+       min-height: inherit;
+        background-color: white;
+        padding: 30px;
+    } 
+    
+#bone p{
+        
+font-size: 12px;
+margin-top: 20px;
+        }
+    
+    #btwo {
+    
+    
+    width: 25%;
+    min-height: inherit;
+    background-image: url(https://plus.unsplash.com/premium_photo-1675805015392-28fd80c551ec?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size:cover; 
+}
+    #bthree {
+    
+    
+        width: 20%;
+        min-height: inherit;
+        background-color: green;
+        }
+        #bthreetop {
+            width: 100%;
+            height: 20vh;
+            background-image: url(https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);
+background-size: cover;
+background-position: 50% 70%; }
+ #bthreebottom { 
+    width: 100%;
+    height: 20vh;
+    background-image: url(https://plus.unsplash.com/premium_photo-1677410642801-725a73622e4e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D);
+   background-size: cover;
+
+}
+
+        
+        #bfour {   
+            width: 30%;
+            min-height: inherit;
+            background-color: rgba(132, 76, 110, 0.875); 
+            color: azure;
+            padding: 30px;
+
+        }
+        .notf{
+            margin-top: 20px;
+            display: flex ;
+            justify-content: space-between;
+        }
+        #photo{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color:chocolate ;
+        }
+        .notf p {
+      width: 86%;
+      font-size: 12px;
+            
+        }
+        @media (max-width: 500px) {
+            #overlay , #text {
+                flex-direction: column;
+            align-items: flex-start;
+            }  
+        }
+        #overlay #text #textright {
+            flex-direction: column;
+        }
+        #overlay #text #textright p {
+        width: initial;
+        margin-top: 20px;  
+
+        }
+        #overlay #text #textright #icons {
+            margin-top: 30px;
+
+        }
+        #text h1 {
+            font-size: 10vw;
+        }
+        #bottom {
+            flex-direction: column;
+        }
+        #bone {
+            width: 100%;
+        }
+        #btwo {
+            width: 100%;
+        }
+        #bthree {
+            width: 100%;
+            flex-direction: column;
+        }
+        #bfour {
+            width: 100%;
+        }
+        #bottom{
+            min-height: 20vh;
+        }
+        
